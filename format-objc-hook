@@ -20,6 +20,7 @@ objc_files=$(objc_files_to_format "$1")
 [ -z "$objc_files" ] && exit 0
 $("$DIR"/format-objc-files.sh -s)
 exit 0
+
 # function format_objc() {
 #   success=0
 #   for file in $objc_files; do
