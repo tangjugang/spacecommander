@@ -9,6 +9,9 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 pre_commit_file='.git/hooks/pre-commit';
 
 function ensure_pre_commit_file_exists() {
+  if [ -d ".git/hooks" ]; then
+    $(rm -r .git/hooks)
+  fi
   if [ -e "$pre_commit_file" ]; then
     return 0
   fi 
@@ -16,7 +19,7 @@ function ensure_pre_commit_file_exists() {
   if [ -h "$pre_commit_file" ]; then
     pre_commit_file=$(readlink "$pre_commit_file")
     return 0
-  fi 
+  fi
 
   if [ -d ".git" ]; then
     $(mkdir -p ".git/hooks");
