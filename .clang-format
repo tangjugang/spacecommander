@@ -58,14 +58,14 @@ Standard:        Auto
 IndentWidth:     4
 TabWidth:        8
 UseTab:          Never
-BreakBeforeBraces: Attatch
+BreakBeforeBraces: Custom
 BraceWrapping: 
-    AfterClass: true
+    AfterClass: false
     AfterControlStatement: false
     AfterEnum: false
-    AfterFunction: true
-    AfterNamespace: true
-    AfterObjCDeclaration: true
+    AfterFunction: false
+    AfterNamespace: false
+    AfterObjCDeclaration: false
     AfterStruct: false
     AfterUnion: false
     BeforeCatch: false
