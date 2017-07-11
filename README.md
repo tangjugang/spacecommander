@@ -1,10 +1,11 @@
 # [ Space Commander]
+[中文说明点这里](http://www.jianshu.com/p/fd2e453ef07f)
 
 **[ Space Commander]** provides tools which enable a team of iOS developers to commit Objective-C code to a git repository using a unified style format, without requiring any manual fixup.
 
 This branch is forked from square/spacecommander. I modified **[setup-repo.sh]** and  **[format-objc-hook]**, to make these functions come true :
 1. automatic format and submit without copying commands to format codes manually.
-2. change the way of enable or disable  automatic format
+2. change the way to enable or disable format files
 
 Installation Locally
 -------------
